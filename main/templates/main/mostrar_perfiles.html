@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfiles de Usuarios</title>
+</head>
+<body>
+    <h1>Perfiles de Usuarios</h1>
+    {% for perfil in perfiles %}
+        <div class="perfil-card">
+            <h2>{{ perfil.nickname }}</h2>
+            <p><strong>Nombre:</strong> {{ perfil.nombre }} {{ perfil.apellido }}</p>
+            <p><strong>Correo:</strong> {{ perfil.correo }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
